@@ -20,7 +20,7 @@ export default function OnlinePortfolio() {
         "The platform was deployed to Microsoft Azure using a GitHub Actions CI/CD workflow. Reliability and maintainability were supported through xUnit unit tests and structured application logging using Serilog.",
       ],
       tech: ["ASP.NET Core", "C#", "JavaScript", "SQL", "Chart.js", "Azure", "GitHub Actions"],
-      github: "https://github.com/Ceedaw",
+      github: "https://github.com/Ceedaw/Event-Ticketing-Web-Application",
     },
     {
       title: "Human Resource Management & Payroll System",
@@ -31,7 +31,7 @@ export default function OnlinePortfolio() {
         "The application also incorporated access controls and dashboard-style summaries to provide management insight into payroll and staffing information.",
       ],
       tech: ["Java", "Object-Oriented Programming", "Serialization"],
-      github: "https://github.com/Ceedaw",
+      github: "https://github.com/Ceedaw/Human-Resource-Management-Payroll-System",
     },
     {
       title: "ABC Clinic Clinical Management System",
