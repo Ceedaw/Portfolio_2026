@@ -53,16 +53,17 @@ export default function OnlinePortfolio() {
   buttonLabel: "View Project Report",
 },
     {
-      title: "PHP Voting Application",
-      subtitle: "Database-Driven Web Application",
-      description: [
-        "This project involved developing a multi-user voting platform using PHP with object-oriented design and MySQL database integration. The application allows authenticated users to create topics, participate in voting, and track results.",
-        "Database interactions were implemented using PDO for secure query execution and dependency injection patterns. The system includes safeguards to prevent duplicate voting and maintain data consistency.",
-        "The application was deployed to a live web server and supported by PHPUnit tests to validate class functionality and database interactions.",
-      ],
-      tech: ["PHP", "MySQL", "PDO"],
-      github: "https://github.com/Ceedaw",
-    },
+  title: "PHP Voting Application",
+  subtitle: "Database-Driven Web Application",
+  description: [
+    "Designed a multi-user voting application using PHP and MySQL, focusing on structured object-oriented development and database integration.",
+    "Implemented core functionality including voting logic, duplicate vote prevention, and user comment features.",
+    "Project documentation outlines system architecture, class design, and database structure supporting full application functionality."
+  ],
+  tech: ["PHP", "MySQL", "PDO", "OOP"],
+  github: "https://github.com/Ceedaw/php-voting-application/tree/master",
+  buttonLabel: "View Project Details"
+},
   ];
 
   const skills = {
