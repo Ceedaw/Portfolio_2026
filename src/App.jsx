@@ -34,16 +34,24 @@ export default function OnlinePortfolio() {
       github: "https://github.com/Ceedaw/Human-Resource-Management-Payroll-System",
     },
     {
-      title: "ABC Clinic Clinical Management System",
-      subtitle: "System Analysis and Design Project",
-      description: [
-        "This project involved the analysis and design of a clinical management system intended to support high patient volume in a walk-in clinic environment. The work followed structured software development lifecycle practices and included requirements analysis, system modeling, and feasibility evaluation.",
-        "Project contributions included creating UML use case and class diagrams, BPMN workflow models, and context and Level-0 data flow diagrams. A normalized relational data model was also designed to support the clinic’s operational data.",
-        "Additional deliverables included UI wireframes and documentation outlining system workflows, database structure, and testing strategy.",
-      ],
-      tech: ["UML", "BPMN", "Database Design", "System Analysis"],
-      github: "https://github.com/Ceedaw",
-    },
+  title: "ABC Recycling Management System",
+  subtitle: "Agile Product Planning and System Design Project",
+  description: [
+    "This project focused on the planning and design of a web-based recycling management platform for ABC Recycling Management Inc. The system was designed to support citizen service requests, route scheduling, complaint tracking, fleet operations, fuel voucher reconciliation, and technician job management through multiple user portals.",
+    "The project followed an Agile approach and included deliverables such as a product vision statement, business case, stakeholder analysis, user personas, user stories, backlog prioritization, acceptance criteria, implementation planning, and interface wireframes.",
+    "I contributed as SCRUM Master and Requirements Lead, helping guide sprint coordination, requirements gathering, user story development, and portal planning across citizen, operations, manager, and technician workflows."
+  ],
+  tech: [
+    "Agile/SCRUM",
+    "Requirements Analysis",
+    "User Stories",
+    "Acceptance Criteria",
+    "Wireframing",
+    "Systems Design"
+  ],
+  github: "/ABC_Recycling_Project_Report_Group49_FINAL.pdf",
+  buttonLabel: "View Project Report",
+},
     {
       title: "PHP Voting Application",
       subtitle: "Database-Driven Web Application",
@@ -115,16 +123,10 @@ export default function OnlinePortfolio() {
                 Designing and building practical full-stack software solutions.
               </h1>
               <p className="hero-copy">
-                I am a graduate of the Computer Programming program at George Brown College with 
-                experience designing and building software applications through hands-on development 
-                projects. My work has focused on full-stack web development, 
-                Java application development, and database-driven systems.
-              </p>
-              <p className="hero-copy hero-copy-muted">
-                Through my projects I gained experience working with technologies such as ASP.NET Core,
-                JavaScript, SQL databases, and Git. I enjoy building structured software solutions and
-                developing applications that are reliable, maintainable, and designed with clear system
-                architecture.
+                Welcome to my portfolio. I am a Computer Programming graduate with a focus on 
+                building practical, reliable software solutions. Here you will find a selection of 
+                projects that reflect my experience across full-stack development, application design, 
+                and system planning.
               </p>
 
               <div className="button-row">
@@ -235,12 +237,10 @@ export default function OnlinePortfolio() {
           </div>
 
           <p className="body-copy top-space-sm">
-            <p>
-            A PDF version of my resume is available through the download button above which
-            includes an overview of my technical skills, development projects, and professional
-            experience.
-            </p>
             
+            This section provides an overview of my technical skills, development projects, and 
+            professional experience.
+           
           </p>
 
           <div className="resume-box top-space">
@@ -267,7 +267,7 @@ export default function OnlinePortfolio() {
                     <h3>{project.title}</h3>
                   </div>
                   <a href={project.github} target="_blank" rel="noreferrer" className="button button-secondary">
-                    View Source Code
+                    {project.buttonLabel || "View Source Code"}
                   </a>
                 </div>
 
@@ -300,7 +300,7 @@ export default function OnlinePortfolio() {
 
           <div className="card-grid two-up top-space">
             <div className="content-card">
-              <h3>Education</h3>
+              <h3>Academic Achievements</h3>
               <p className="top-space-sm"><strong>George Brown College</strong></p>
               <p>Computer Programming Diploma</p>
               <p>Completed April 2026</p>
@@ -345,15 +345,33 @@ export default function OnlinePortfolio() {
           <div className="card-grid two-up top-space">
             <div className="content-card">
               <div className="mini-label">Email</div>
-              <p className="contact-value">ceejay.j.dawe@gmail.com</p>
+              <a
+                href="mailto:ceejay.j.dawe@gmail.com"
+                className="contact-value"
+              >
+                ceejay.j.dawe@gmail.com
+              </a>
             </div>
             <div className="content-card">
               <div className="mini-label">GitHub</div>
-              <p className="contact-value">github.com/Ceedaw</p>
+              <a
+                href="https://github.com/Ceedaw"
+                target="_blank"
+                rel="noreferrer"
+                className="contact-value"
+              >
+                github.com/Ceedaw
+              </a>
             </div>
           </div>
+          <div className="top-space back-to-top-wrapper">
+            <a href="#" className="back-to-top">
+              ↑ Back to Top
+            </a>
+        </div>
         </section>
       </main>
     </div>
+    
   );
 }
